@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+	<link rel = "stylesheet" type = "text/css" href = "./style.css">
+
+</head>
+<body>
+
+	<form class="register" action="index.html" method="post" autocomplete="off">
+		<h1>Register</h1>
+
+		<label for="name">Name Complete</label>
+		<input type="text" name="name">
+
+		<label for="username">Username</label>
+		<input type="text" name="username" >
+		<span id="errorUser"></span>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" onblur = "validatesEmail()" onfocus="msgError()">
+		<span id="errorEmail"></span>
+
+		<label for="password">Senha</label>
+		<input type="password" name="password">
+
+		<label for="password">Confirm Password</label>
+		<input type="password" name="confirm_password" onkeyup="validatesPass()">
+		<span id="errorPass"></span>
+
+		<span><a href="login.html">Have an account?</a></span>
+
+		<input type="submit" name="button" value="Register" onclick="return validateForm()">
+	</form>
+
+
+	<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #34495e;
+	font-family: sans-serif;
+}
+
+/* Login Form */
+
+.box{
+	width: 400px;
+	
+	padding: 40px;
+	
+	position: absolute;
+	
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	box-shadow: 2px 2px 8px black;
+
+	background-color: #191919;
+
+	border-radius: 6px;
+
+	text-align: center;
+}
+
+.box h1{
+	color: white;
+
+	text-transform: uppercase;
+
+	font-weight: 500;
+}
+
+
+.box input[type = text], .box input[type = password]{
+	border:2px solid #3498db;
+	border-radius: 24px;
+
+	background: none;
+
+	color: #fff;
+
+	display: block;
+
+	margin:20px auto;
+	padding: 14px 10px;
+
+	width: 200px;
+
+	text-align: center;
+
+	outline: none;
+
+	transition: 250ms;
+}
+
+.box input[type = text]:focus, .box input[type = password]:focus{
+	width: 280px;
+
+	border-color: #2ecc71;
+}
+
+
+
+.box input[type = submit]{
+	border:2px solid #2ecc71;
+	border-radius: 24px;
+
+	background: none;
+
+	color: #fff;
+
+	display: block;
+
+	margin:20px auto;
+	padding: 14px 40px;
+
+
+	text-align: center;
+
+	cursor: pointer;
+	outline: none;
+
+	transition: 250ms;
+}
+
+.box input[type = submit]:hover{
+	background-color: #2ecc71;
+}
+
+.box span{
+	color: #2ecc71;
+
+	font-size: 10px;
+
+}
+
+.box span:hover{
+	border-bottom:2px solid #3498db;
+
+	padding-bottom: 4px;
+}
+
+.box span a{
+	text-decoration: none;
+
+	color: #2ecc71;
+}
+
+.box span a:hover{
+	color: #3498db;
+	font-size: 11px;
+
+}
+
+/* Registration Form */
+
+.register {
+	background-color: #191919;
+	color: #fff;
+
+	display: grid;
+
+	margin: 20px auto;
+	padding: 25px 0; 
+
+	justify-content: center;
+	align-items: center;
+
+	width: 450px;
+
+	box-shadow: 1px 1px 8px black;
+
+	border-radius: 10px;
+}
+
+.register h1 {
+	text-transform: uppercase;
+	text-align: center;
+
+	margin-bottom: 20px;
+	
+	font-weight: 500;
+
+}
+
+.register input[type = text], .register input[type = password], .register input[type = email]{
+	background: transparent;
+	color: #fff;
+
+	width: 350px;
+	height: 40px;
+
+	padding: 10px;
+
+	text-align: center;
+
+	border-radius: 24px; 
+	border: 2px solid #2ecc71;
+
+	margin: 10px 0 15px 0;
+
+	outline: none;
+
+	transition: 300ms;
+
+}
+
+.register input[type = text]:focus, .register input[type = password]:focus, .register input[type = email]:focus{
+	border-color:#3498db;
+}
+
+.register input[type = submit]{
+	background:none;
+	color: #fff;
+
+	font-size: 14px;
+
+	border: 2px solid #3498db;
+	border-radius: 24px; 
+
+	width: 150px;
+
+	margin:10px auto;
+	padding: 12px 10px;
+
+	outline: none;
+	cursor: pointer;
+
+	transition: 250ms;
+}
+
+.register input[type = submit]:hover{
+	background-color: #3498db;
+}
+
+.register span{
+	text-align: right;
+}
+
+.register span a{
+	font-size: 12px;
+
+	color: #3498db;
+
+	text-decoration: none;
+}
+
+.register span a:hover{
+	color: #2ecc71;
+
+}
+
+/* Validações // Incrementos de form  */
+
+.register input[type = email]:invalid{
+	border-color: red;
+}
+
+.register span#errorEmail, .register span#errorPass {
+	color: crimson;
+	font-size: 11px;
+}
+
+.register input[name = name]{
+	text-transform: capitalize;
+}
+
+.register input[name = username]{
+	text-transform: uppercase;
+}
